@@ -5,6 +5,6 @@
 #include "jsmn.h"
 
 char * json_fetch(char *url);
-jsmntok_t * json_tokenise(char *js);
+jsmntok_t * json_tokenise(char *js, int js_len);
 bool json_token_streq(char *js, jsmntok_t *t, char *s);
 char * json_token_tostr(char *js, jsmntok_t *t);
